@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css overflow 03</title>
+    <style>
+        *{margin:0;}
+        #cover{
+            background:url("https://api.our-wedding.link/uploads/546f5ce0-0e7d-11ef-b751-37674022e818.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display:block;
+            position: relative;
+            width:100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .img-l-top{
+            position: absolute;
+            top: -20px;
+            left: -150px;
+        }
+        .img-r-top{
+            position: absolute;
+            transform:  scaleX(-1);
+            top: -20px;
+            right: -150px;
+        }
+        .img-l-bottom{
+            position: absolute;
+            transform: scaleY(-1);
+            bottom: -50px;
+            left: -150px;
+        }
+        .img-r-bottom{
+            position: absolute;
+            transform: scale(-1, -1);
+            bottom: -50px;
+            right: -150px;
+        }
+        #cover-text{
+            text-align: center;
+            margin-top: 150px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="cover">
+        <img class="img-l-top" src="https://images.ctfassets.net/q40z6pfqje6o/Fnav5L3DZOt9osj1CLPzg/7723ca60c5d1af90927dafd960b1894f/IMG_0696.png">
+        <img class="img-l-bottom" src="https://images.ctfassets.net/q40z6pfqje6o/Fnav5L3DZOt9osj1CLPzg/7723ca60c5d1af90927dafd960b1894f/IMG_0696.png">
+        <img class="img-r-top" src="https://images.ctfassets.net/q40z6pfqje6o/Fnav5L3DZOt9osj1CLPzg/7723ca60c5d1af90927dafd960b1894f/IMG_0696.png">
+        <img class="img-r-bottom" src="https://images.ctfassets.net/q40z6pfqje6o/Fnav5L3DZOt9osj1CLPzg/7723ca60c5d1af90927dafd960b1894f/IMG_0696.png">
+    <div id="cover-text">
+        <p>The Wedding of</p>
+        <h1>Ledis & BadBoy</h1>
+        <p>19 mei 20xx</p>
+        <button>Open</button>
+    </div>
+</body>
+</html>
